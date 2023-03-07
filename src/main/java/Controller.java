@@ -8,10 +8,13 @@ public class Controller {
     private String operation=null;
     private String operand1,operand2="0";
     @FXML
+    //primary view area
     private TextField viewArea;
     @FXML
+    //secondary view area
     private TextField viewArea1;
     @FXML
+    //User input to primary view area
     void operandButton(ActionEvent event) {
 
         if(viewArea.getText().length()<10){
@@ -20,6 +23,7 @@ public class Controller {
         }
     }
     @FXML
+    //Select an operation, pass the first operand to the secondary view area and set its value(i.e. operand 1)
     void operationButton(ActionEvent event) {
         operation=((Button) event.getSource()).getText();
         viewArea1.setText(viewArea.getText()+operation);
@@ -27,6 +31,7 @@ public class Controller {
         viewArea.setText("");
     }
     @FXML
+    //Assign value to operand 2, call the computation method and set result to primary view area
     void equalsButton(ActionEvent event) {
         operand2=viewArea.getText();
         String result=CalculatorBackend.basicCompute(operand1,operand2,operation);
@@ -35,6 +40,7 @@ public class Controller {
     }
 
     @FXML
+    //Delete a single input value from view area or clear view area
     void viewAreaButton(ActionEvent event) {
         String type=((Button) event.getSource()).getText();
         if(type.equals("DEL") & viewArea.getText().length()>0){
