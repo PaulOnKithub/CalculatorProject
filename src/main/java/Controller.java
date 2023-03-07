@@ -5,14 +5,12 @@ import javafx.scene.control.TextField;
 
 public class Controller {
 
+    private String operation=null;
+    private String operand1,operand2="0";
     @FXML
     private TextField viewArea;
     @FXML
     private TextField viewArea1;
-    private String operation=null;
-    private String operand1,operand2="0";
-    int operand1length=0;
-
     @FXML
     void operandButton(ActionEvent event) {
 
