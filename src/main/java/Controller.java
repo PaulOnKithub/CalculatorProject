@@ -24,7 +24,7 @@ public class Controller {
         }
     }
     @FXML
-    //Select an operation, pass the first operand to the secondary view area and set its value(i.e. operand 1)
+    //Select an operation, pass the first operand to the secondary view area and assign a value(i.e. operand 1)
     void operationButton(ActionEvent event) {
         operation=((Button) event.getSource()).getText();
         viewArea1.setText(viewArea.getText()+operation);
