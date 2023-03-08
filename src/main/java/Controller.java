@@ -2,6 +2,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import org.springframework.util.StringUtils;
 
 public class Controller {
 
@@ -34,9 +35,11 @@ public class Controller {
     //Assign value to operand 2, call the computation method and set result to primary view area
     void equalsButton(ActionEvent event) {
         operand2=viewArea.getText();
-        String result=CalculatorBackend.basicCompute(operand1,operand2,operation);
-        viewArea1.setText(viewArea1.getText()+viewArea.getText()+"=");
-        viewArea.setText(result);
+        if(!(StringUtils.isEmpty(operand1) | StringUtils.isEmpty(operand2))) {
+            String result = CalculatorBackend.basicCompute(operand1, operand2, operation);
+            viewArea1.setText(viewArea1.getText() + viewArea.getText() + "=");
+            viewArea.setText(result);
+        }
     }
 
     @FXML
