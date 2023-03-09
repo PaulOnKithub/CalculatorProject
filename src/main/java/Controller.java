@@ -27,9 +27,24 @@ public class Controller {
     //Select an operation, pass the first operand to the secondary view area and assign a value(i.e. operand 1)
     void operationButton(ActionEvent event) {
         operation=((Button) event.getSource()).getText();
+        //Check to enable entry of negative values as first operands
+        if(operation.equals("-")&(StringUtils.isEmpty(viewArea.getText())
+        && StringUtils.isEmpty(viewArea1.getText()))){
+            viewArea.setText("-");
+            return;
+        }
         viewArea1.setText(viewArea.getText()+operation);
         operand1 = viewArea.getText();
         viewArea.setText("");
+    }
+    @FXML
+    //Enable input of decimal value operands
+    void decimalButton(ActionEvent event) {
+        String point=((Button)event.getSource()).getText();
+        if(!(viewArea.getText().contains(point))){
+            String decimal=(viewArea.getText()+point);
+            viewArea.setText(decimal);
+        }
     }
     @FXML
     //Assign value to operand 2, call the computation method and set result to primary view area
@@ -51,6 +66,8 @@ public class Controller {
             display=display.substring(0,display.length()-1);
             viewArea.setText(display);
         }else if(type.equals("CLEAR") &((viewArea.getText().length()>0)|(viewArea1.getText().length()>0))) {
+            operand1="0";
+            operand2="0";
             viewArea.setText("");
             viewArea1.setText("");
         }
