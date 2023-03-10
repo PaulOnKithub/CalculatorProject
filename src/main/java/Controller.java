@@ -57,6 +57,7 @@ public class Controller {
         }
     }
 
+
     @FXML
     //Delete a single input value from view area or clear view area
     void viewAreaButton(ActionEvent event) {

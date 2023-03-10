@@ -9,6 +9,8 @@
 }
 .background-pane{
    -fx-background-color: -bg-gradient;
-   -fx-padding: 10px 15px;
-   -fx-background-radius: 10px;
+   -fx-background-radius: 11px;
+}
+.button:hover {
+  -fx-background-color: #B1d811;
 }
