@@ -9,14 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62009a4f-71aa-4e2c-8e86-bae73c3a7cad" name="Changes" comment="Styling Modifications">
+    <list default="true" id="62009a4f-71aa-4e2c-8e86-bae73c3a7cad" name="Changes" comment="Final App">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/GUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GUI.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/GUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678428888001</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Final App">
+      <created>1678439263795</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1678439263795</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,6 +175,7 @@
     <MESSAGE value="Skeleton App" />
     <MESSAGE value="Final Application" />
     <MESSAGE value="Styling Modifications" />
-    <option name="LAST_COMMIT_MESSAGE" value="Styling Modifications" />
+    <MESSAGE value="Final App" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final App" />
   </component>
 </project>
